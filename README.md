@@ -1,0 +1,2 @@
+# patterns
+Паттерны в python
