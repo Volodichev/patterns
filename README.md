@@ -1,45 +1,65 @@
 # Паттерны в python (Patterns)
 
 
-## Порождающие паттерны
+## Порождающие паттерны(Creational Patterns):
 
-- [Абстрактная фабрика (Abstract Factory)](./abstract_factory#readme)
+- [Абстрактная фабрика (Abstract Factory)](./abstract_factory#readme) Семейства связанных объектов.
 - [Строитель (Builder)](./builder#readme) Cложные объекты пошагово. один код для разных объектов.
 - [Фабричный метод (Factory Method)](./factory_method#readme) Общий интерфейс для подклассов изменет тип объектов.
 - [Прототип (Prototype)](./prototype#readme) Копируем объекты, не вдаваясь в подробности реализации.
-- [Одиночка (Singleton)](./singleton#readme)
+- [Одиночка (Singleton)](./singleton#readme) Класс имеет только один экземпляр, и глобальную точку доступа.
+- borg?
+- lazy_evaluation?
+- pool?
 
-## Структурные паттерны
+## Структурные паттерны(Structural Patterns):
 
 - [Адаптер (Adapter)](./adapter#readme) Несовместимые интерфейсы
 - [Компоновщик (Composite)](./composite#readme) Древовидная структуруа
 - [Декоратор (Decorator)](./decorator#readme) Функциональность через «обёртки».
 - [Фасад (Facade)](./facade#readme) Простой интерфейс к сложной структуре 
 - [Мост (Bridge)](./bridge#readme) Абстракция + Реализация
-- [Легковес (Flyweight)](./flyweight#readme) Разделяя общее состояние объектов
+- [Легковес/Приспособленец (Flyweight)](./flyweight#readme) Разделяя общее состояние объектов
 - [Заместитель (Proxy)](./proxy#readme) Подставляет объекты-заменители.
+- Модуль 
+- 3-tier
+- front_controller
+- MVC
 
-## Поведенческие паттерны
+## Поведенческие паттерны(Behavioral Patterns):
 
 - [Команда (Command)](./command#readme) Передает запросы в объекты как аргументы.
 - [Итератор (Iterator)](./iterator#readme) Последовательный обход элементов составных объектов.
 - [Наблюдатель (Observer)](./observer#readme) Один объект следит за другим.
-- [Стратегия (Strategy)](./strategy#readme) 
-- Определяет семейство схожих алгоритмов и помещает каждый из них в собственный класс, после чего алгоритмы можно взаимозаменять прямо во время исполнения программы.
+- [Стратегия (Strategy)](./strategy#readme) Схожие алгоритмы в класс.
 - [Посредник (Mediator)](./mediator#readme) Перемещение связей в один класс-посредник.
-- [Состояние (State)](./state#readme) 
-- Позволяет объектам менять поведение в зависимости от своего состояния. Извне создаётся впечатление, что изменился класс объекта.
-- 
-- [Шаблонный метод (Template Method)](./template_method#readme) 
-- Определяет скелет алгоритма, перекладывая ответственность за некоторые его шаги на подклассы. Паттерн позволяет подклассам переопределять шаги алгоритма, не меняя его общей структуры.
-- 
-- [Цепочка обязанностей (Chain of Responsibility)](./chain_of_responsibility#readme) 
-- Позволяет передавать запросы последовательно по цепочке обработчиков. Каждый последующий обработчик решает, может ли он обработать запрос сам и стоит ли передавать запрос дальше по цепи.
-- 
-- [Снимок (Memento)](./memento#readme) 
-- Позволяет делать снимки состояния объектов, не раскрывая подробностей их реализации. Затем снимки можно использовать, чтобы восстановить прошлое состояние объектов.
-- 
-- [Посетитель (Visitor)](./visitor#readme) 
-- Позволяет создавать новые операции, не меняя классы объектов, над которыми эти операции могут выполняться.
+- [Состояние (State)](./state#readme) Меняет поведение в зависимости от состояния.
+- [Шаблонный метод (Template Method)](./template_method#readme) Перекладывает ответственность на подклассы не меняя его общей структуры.
+- [Цепочка обязанностей (Chain of Responsibility)](./chain_of_responsibility#readme) Запросы по цепочке обработчиков. 
+- [Снимок/Хранитель (Memento)](./memento#readme) Снимки состояния объектов.
+- [Посетитель (Visitor)](./visitor#readme) Новые операции, не меняя классы объектов.
+- Классная доска (Blackboard)
+- catalog?
+- chaining_method
+- publish_subscribe
+- registry
+- specification
+
+## Design for Testability Patterns:
+- dependency_injection
+
+## Fundamental Patterns:
+- delegation_pattern
+
+## Other:
+- blackboard
+- graph_search
+- HSM
+
+
+- inheritance?
+- wrapper?
+- null
+- closure
 
 [Источник.](https://refactoring.guru/ru/design-patterns)
