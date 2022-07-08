@@ -3,31 +3,43 @@
 
 ## Порождающие паттерны
 
-- [Абстрактная фабрика (Abstract Factory)](./adapter#readme)
-- [Строитель (Builder)](./builder#readme)
-- [Фабричный метод (Factory Method)](./factory_method#readme)
-- [Прототип (Prototype)](./prototype#readme)
+- [Абстрактная фабрика (Abstract Factory)](./abstract_factory#readme)
+- [Строитель (Builder)](./builder#readme) Cложные объекты пошагово. один код для разных объектов.
+- [Фабричный метод (Factory Method)](./factory_method#readme) Общий интерфейс для подклассов изменет тип объектов.
+- [Прототип (Prototype)](./prototype#readme) Копируем объекты, не вдаваясь в подробности реализации.
 - [Одиночка (Singleton)](./singleton#readme)
 
 ## Структурные паттерны
 
-- [Адаптер (Adapter)](./adapter#readme)
-- [Компоновщик (Composite)](./composite#readme)
-- [Декоратор (Decorator)](./decorator#readme)
-- [Фасад (Facade)](./facade#readme)
-- [Мост (Bridge)](./bridge#readme)
-- [Легковес (Flyweight)](./flyweight#readme)
-- [Заместитель (Proxy)](./proxy#readme)
+- [Адаптер (Adapter)](./adapter#readme) Несовместимые интерфейсы
+- [Компоновщик (Composite)](./composite#readme) Древовидная структуруа
+- [Декоратор (Decorator)](./decorator#readme) Функциональность через «обёртки».
+- [Фасад (Facade)](./facade#readme) Простой интерфейс к сложной структуре 
+- [Мост (Bridge)](./bridge#readme) Абстракция + Реализация
+- [Легковес (Flyweight)](./flyweight#readme) Разделяя общее состояние объектов
+- [Заместитель (Proxy)](./proxy#readme) Подставляет объекты-заменители.
 
 ## Поведенческие паттерны
 
-- [Команда (Command)](./command#readme)
-- [Итератор (Iterator)](./iterator#readme)
-- [Наблюдатель (Observer)](./observer#readme)
-- [Стратегия (Strategy)](./strategy#readme)
-- [Посредник (Mediator)](./mediator#readme)
-- [Состояние (State)](./state#readme)
-- [Шаблонный метод (Template Method)](./template_method#readme)
-- [Цепочка обязанностей (Chain of Responsibility)](./chain_of_responsibility#readme)
-- [Снимок (Memento)](./memento#readme)
-- [Посетитель (Visitor)](./visitor#readme)
+- [Команда (Command)](./command#readme) Передает запросы в объекты как аргументы.
+- [Итератор (Iterator)](./iterator#readme) Последовательный обход элементов составных объектов.
+- [Наблюдатель (Observer)](./observer#readme) Один объект следит за другим.
+- [Стратегия (Strategy)](./strategy#readme) 
+- Определяет семейство схожих алгоритмов и помещает каждый из них в собственный класс, после чего алгоритмы можно взаимозаменять прямо во время исполнения программы.
+- [Посредник (Mediator)](./mediator#readme) Перемещение связей в один класс-посредник.
+- [Состояние (State)](./state#readme) 
+- Позволяет объектам менять поведение в зависимости от своего состояния. Извне создаётся впечатление, что изменился класс объекта.
+- 
+- [Шаблонный метод (Template Method)](./template_method#readme) 
+- Определяет скелет алгоритма, перекладывая ответственность за некоторые его шаги на подклассы. Паттерн позволяет подклассам переопределять шаги алгоритма, не меняя его общей структуры.
+- 
+- [Цепочка обязанностей (Chain of Responsibility)](./chain_of_responsibility#readme) 
+- Позволяет передавать запросы последовательно по цепочке обработчиков. Каждый последующий обработчик решает, может ли он обработать запрос сам и стоит ли передавать запрос дальше по цепи.
+- 
+- [Снимок (Memento)](./memento#readme) 
+- Позволяет делать снимки состояния объектов, не раскрывая подробностей их реализации. Затем снимки можно использовать, чтобы восстановить прошлое состояние объектов.
+- 
+- [Посетитель (Visitor)](./visitor#readme) 
+- Позволяет создавать новые операции, не меняя классы объектов, над которыми эти операции могут выполняться.
+
+[Источник.](https://refactoring.guru/ru/design-patterns)
